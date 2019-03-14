@@ -1,28 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch, withRouter} from 'react-router-dom';
+import Navigation from './components/Navigation';
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { faIgloo } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo)
+
 
 class App extends Component {
+  getComponents = (route, index) => (
+    <Route key={index} exact={route.isExact} path={route.path} render={props => (<route.component {...props} />)} />
+  )
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+     <Switch>
+      <Navigation {...this.props}/>
+     </Switch>
+     </>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
