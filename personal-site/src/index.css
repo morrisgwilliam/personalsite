@@ -1,11 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Oswald", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #293347 !important;
+}
+
+h5 {
+  color: #a0a09e;
+  font-weight: 200 !important;
+  font-size: 1.75rem !important;
 }
 
 code {
@@ -13,6 +18,162 @@ code {
     monospace;
 }
 
-nav {
-  padding: 10px auto;
+.nav-fluid {
+  padding: 25px;
+  margin: 0px 10px;
+}
+
+.btn-large i {
+  font-size: 3em !important;
+}
+.btn-large {
+  -webkit-box-shadow: 0px 0px 0px 0px !important;
+  box-shadow: 0px 0px 0px 0px !important;
+}
+
+.v-divider {
+  width: 2px;
+  height: 100%;
+  margin: auto 10px;
+  background-color: #c4c4c2;
+}
+
+.nav-btn,
+a {
+  color: #a0a09e !important;
+  margin: auto 0px;
+  cursor: pointer;
+  background-color: transparent !important;
+}
+.nav-btn:hover,
+a:hover {
+  color: #293347 !important;
+  background-color: transparent !important;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.theme-orange {
+  color: #f37023;
+}
+.emphasize {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.theme-red {
+  color: #ee3923;
+}
+
+.profile-pic {
+  background-image: url(https://media.licdn.com/dms/image/C5603AQFOLGmoYO_YYA/profile-displayphoto-shrink_200_200/0?e=1557964800&v=beta&t=iB0fRN5lMk5xnj1o3uUtcB6gxiead1taUyiwtQfJ1SM);
+  border-radius: 50%;
+  border: 2px solid #293347;
+  background-repeat: none;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+}
+
+.cls-4,
+.cls-10,
+.cls-32 {
+  stroke: #293347;
+  fill: none;
+  stroke-dasharray: 650;
+  animation: animateMedium 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes animateMedium {
+  0% {
+    stroke-dashoffset: 650;
+  }
+  30% {
+    stroke-dashoffset: 650;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-22,
+.cls-23,
+.cls-24,
+.cls-25,
+.cls-26,
+.cls-27,
+.cls-28 {
+  stroke: #293347;
+  fill: none;
+  stroke-dasharray: 40;
+  animation: animateXSmall 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes animateXSmall {
+  0% {
+    stroke-dashoffset: 40;
+  }
+  30% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.cls-18,
+.cls-19,
+.cls-5,
+.cls-6,
+.cls-8,
+.cls-7,
+.cls-9,
+.cls-20,
+.cls-11,
+.cls-12,
+.cls-13,
+.cls-14,
+.cls-15,
+.cls-16,
+.cls-30,
+.cls-31,
+.cls-21 {
+  stroke: #293347;
+  fill: none;
+  stroke-dasharray: 230;
+  animation: animateSmall 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes animateSmall {
+  0% {
+    stroke-dashoffset: 230;
+  }
+  30% {
+    stroke-dashoffset: 230;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.cls-17,
+.cls-29 {
+  stroke: #293347;
+  fill: none;
+  stroke-dasharray: 2200;
+  animation: animateLarge 3s cubic-bezier(0, 0.23, 1, 0.1);
+}
+
+@keyframes animateLarge {
+  0% {
+    stroke-dashoffset: 2200;
+  }
+  30% {
+    stroke-dashoffset: 2200;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
