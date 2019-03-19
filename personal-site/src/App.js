@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import HeroBanner from "./components/HeroBanner";
+import BioSection from "./components/BioSection";
 
 class App extends Component {
   getComponents = (route, index) => (
@@ -20,6 +21,7 @@ class App extends Component {
             <HeroBanner {...this.props} />
           </Switch>
         </Navigation>
+        <BioSection {...this.props}/>
       </>
     );
   }
