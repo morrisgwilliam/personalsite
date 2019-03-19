@@ -3,8 +3,8 @@ import HeroAnimation from "./HeroAnimation";
 
 const HeroBanner = props => (
   <>
-    <div className="row hero-developer pt-5">
-      <div className="col-12 pt-3" align="center">
+    <div className="row hero-developer">
+      <div className="col-12" align="center">
         <h1 className="emphasize">.Net Full Stack Web Developer</h1>
         <h5>Creating innovative web appications.</h5>
       </div>

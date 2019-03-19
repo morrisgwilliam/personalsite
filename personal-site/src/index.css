@@ -7,6 +7,15 @@ body {
   color: #293347 !important;
 }
 
+.theme-purple {
+  color: #9f30fa !important;
+}
+
+.logo {
+  max-width: 25%;
+  height: auto;
+}
+
 h5 {
   color: #a0a09e;
   font-weight: 200 !important;
@@ -31,23 +40,18 @@ code {
   box-shadow: 0px 0px 0px 0px !important;
 }
 
-.v-divider {
-  width: 2px;
-  height: 100%;
-  margin: auto 10px;
-  background-color: #c4c4c2;
-}
-
 .nav-btn,
 a {
-  color: #a0a09e !important;
+  color: #60b8f7 !important;
   margin: auto 0px;
   cursor: pointer;
   background-color: transparent !important;
+  text-decoration: none;
 }
 .nav-btn:hover,
 a:hover {
-  color: #293347 !important;
+  text-decoration: none;
+  color: #9f30fa !important;
   background-color: transparent !important;
   -webkit-transition: color 0.3s ease-out;
   -moz-transition: color 0.3s ease-out;
@@ -55,12 +59,86 @@ a:hover {
   transition: color 0.3s ease-out;
 }
 
+.purple-wm {
+  color: #9f30fa !important;
+  margin: auto 0px;
+  cursor: pointer;
+  background-color: transparent !important;
+}
+
+.b-r {
+  border-right: #9f30fa 1px solid;
+}
+
+.roles-container {
+  margin-top: -25px;
+  border-radius: 6px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.purple-text-wm {
+  color: #9f30fa !important;
+}
+
+.blue-gradient{
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(#9f30fa,#60b8f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+.red-gradient{
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-style: italic;
+  background: -webkit-linear-gradient(#fffb07,#f44336);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Playfair Display', serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+}
+
+.slantedDivBlue {
+  position: relative;
+  background: rgba(96,184,287,0.8);
+  color: white;
+}
+
+.slantedDivBlue::after {
+  position: absolute;
+  background: rgb(159, 48, 250);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-origin: top right;
+  content: "";
+  transform: skewY(-5deg);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .theme-orange {
   color: #f37023;
 }
 .emphasize {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3.0rem;
 }
 .theme-red {
   color: #ee3923;
@@ -80,7 +158,7 @@ a:hover {
 .cls-10,
 .cls-32 {
   stroke: #293347;
-  fill: none;
+  fill: #293347;
   stroke-dasharray: 650;
   animation: animateMedium 3s cubic-bezier(0, 0.23, 1, 0.1);
 }
@@ -88,11 +166,18 @@ a:hover {
 @keyframes animateMedium {
   0% {
     stroke-dashoffset: 650;
+    fill: none;
   }
   30% {
     stroke-dashoffset: 650;
+    fill: none;
+  }
+  90% {
+    fill: #293347;
   }
   100% {
+    fill: #293347;
+    opacity: 10;
     stroke-dashoffset: 0;
   }
 }
@@ -108,7 +193,7 @@ a:hover {
 .cls-27,
 .cls-28 {
   stroke: #293347;
-  fill: none;
+  fill: #293347;
   stroke-dasharray: 40;
   animation: animateXSmall 3s cubic-bezier(0, 0.23, 1, 0.1);
 }
@@ -116,11 +201,18 @@ a:hover {
 @keyframes animateXSmall {
   0% {
     stroke-dashoffset: 40;
+    fill: none;
   }
   30% {
     stroke-dashoffset: 40;
+    fill: none;
+  }
+  90% {
+    fill: #293347;
   }
   100% {
+    fill: #293347;
+    opacity: 10;
     stroke-dashoffset: 0;
   }
 }
@@ -142,7 +234,7 @@ a:hover {
 .cls-31,
 .cls-21 {
   stroke: #293347;
-  fill: none;
+  fill: #293347;
   stroke-dasharray: 230;
   animation: animateSmall 3s cubic-bezier(0, 0.23, 1, 0.1);
 }
@@ -150,18 +242,25 @@ a:hover {
 @keyframes animateSmall {
   0% {
     stroke-dashoffset: 230;
+    fill: none;
   }
   30% {
     stroke-dashoffset: 230;
+    fill: none;
+  }
+  90% {
+    fill: #293347;
   }
   100% {
+    fill: #293347;
+    opacity: 10;
     stroke-dashoffset: 0;
   }
 }
 .cls-17,
 .cls-29 {
   stroke: #293347;
-  fill: none;
+  fill: #293347;
   stroke-dasharray: 2200;
   animation: animateLarge 3s cubic-bezier(0, 0.23, 1, 0.1);
 }
@@ -169,11 +268,19 @@ a:hover {
 @keyframes animateLarge {
   0% {
     stroke-dashoffset: 2200;
+    fill: none;
   }
   30% {
     stroke-dashoffset: 2200;
+    fill: none;
+  }
+  90%{
+    fill: #293347;
   }
   100% {
+    fill: #293347;
+    opacity: 10;
     stroke-dashoffset: 0;
   }
 }
+
