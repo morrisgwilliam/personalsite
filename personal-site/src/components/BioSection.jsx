@@ -47,7 +47,7 @@ const BioSection = props => (
       </div>
       <div className="col-10 mx-auto roles-container">
         <div className="row text-center mb-0">
-          <div className="col-s px-1 py-5">
+          <div className="col-12 px-1 py-5">
             <i className="fas fa-code fa-3x purple-text-wm" />
             <h4>Full Stack Developer</h4>
             <p>
@@ -111,7 +111,7 @@ const BioSection = props => (
               </ReactTooltip>
             </div>
           </div>
-          <div className="col px-1 py-5">
+          <div className="col-12 px-1 py-5">
             <i
               className="fa fa-location-arrow fa-3x purple-text-wm"
               aria-hidden="true"
