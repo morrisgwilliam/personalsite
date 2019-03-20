@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import HeroBanner from "./components/HeroBanner";
 import BioSection from "./components/BioSection";
@@ -17,11 +17,9 @@ class App extends Component {
     return (
       <>
         <Navigation {...this.props}>
-          <Switch>
-            <HeroBanner {...this.props} />
-          </Switch>
+          <HeroBanner {...this.props} />
         </Navigation>
-        <BioSection {...this.props}/>
+        <BioSection {...this.props} />
       </>
     );
   }
