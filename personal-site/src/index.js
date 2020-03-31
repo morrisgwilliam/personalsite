@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter} from 'react-router-dom';
 
+andAnotherErrorJustForFun
 errorOnGitCommit
 
 ReactDOM.render(
