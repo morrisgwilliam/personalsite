@@ -1,0 +1,33 @@
+name: testing yml
+
+on: 
+  push:
+    branches: [ 'master', 'testbranch' ]
+    
+jobs:
+  build:
+    
+    runs-on: windows-latest
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE
+    - uses: actions/checkout@v1
+    
+    - name: Build LiveFXScheduler Web React Client Install Dependencies
+      uses: actions/setup-node@v1
+        
+    - name: Install NPM dependencies
+      working-directory: personal-site
+      run: npm install
+    
+    - name: Build React Client
+      working-directory: personal-site
+      run: npm run-script lint
+      
+    - name: Build React Client
+      working-directory: personal-site
+      run: npm run-script build
