@@ -23,11 +23,10 @@ jobs:
     - name: Install NPM dependencies
       working-directory: personal-site
       run: npm install
-    
-    - name: Build React Client
-      working-directory: personal-site
-      run: npm run-script lint
       
     - name: Build React Client
       working-directory: personal-site
       run: npm run-script build
+      
+    - if: failure()
+      run: echo "Something went wrong"
