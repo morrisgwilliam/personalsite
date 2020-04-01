@@ -20,6 +20,10 @@ jobs:
     - name: Build LiveFXScheduler Web React Client Install Dependencies
       uses: actions/setup-node@v1
       
+    - name: Install node_modules
+      working-directory: personal-site
+      run: npm install
+      
     - name: Build React Client
       working-directory: personal-site
       run: npm run-script build
