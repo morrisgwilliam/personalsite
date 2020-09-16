@@ -1,0 +1,26 @@
+name: CI-PersonalSite
+
+on:
+  push
+
+env:
+  PATH_REACT:  ./personal-site
+
+jobs:
+  build:
+    defaults:
+      run:
+        working-directory: $PATH_REACT
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      name: checkout repo
+    
+    - uses: actions/setup-node@v1
+
+    - name: install react dependencies
+      run: npm install
+
+    - name: build react client
+      run: npm run build
