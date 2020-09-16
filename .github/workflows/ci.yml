@@ -20,6 +20,9 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 10.x
+    
+    - name: print dir
+      run: echo "$(ls)"
 
     - name: install react dependencies
       working-directory: $PATH_REACT
