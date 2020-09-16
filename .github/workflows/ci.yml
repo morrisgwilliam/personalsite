@@ -28,9 +28,9 @@ jobs:
       working-directory: ./personal-site
 
     - name: install react dependencies
-      working-directory: $REACT_PATH
+      working-directory: ./personal-site
       run: npm install
 
     - name: build react client
-      working-directory: $REACT_PATH
+      working-directory: ${{ REACT_PATH }}
       run: npm run build
