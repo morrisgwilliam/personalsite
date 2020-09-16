@@ -3,14 +3,11 @@ name: CI-PersonalSite
 on:
   push
 
-env:
-  REACT_PATH:  ./personal-site
-
 jobs:
-  build:
+  build-react:
     defaults:
       run:
-        working-directory: $REACT_PATH
+        working-directory: ./personal-site
 
     runs-on: ubuntu-latest
     steps:
@@ -20,17 +17,9 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    
-    - name: print dir
-      run: |
-        echo "current directory: $(ls)"
-        echo "path variable $REACT_PATH"
-      working-directory: ./personal-site
 
     - name: install react dependencies
-      working-directory: ./personal-site
       run: npm install
 
     - name: build react client
-      working-directory: $REACT_PATH
       run: npm run build
