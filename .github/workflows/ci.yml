@@ -32,5 +32,5 @@ jobs:
       run: npm install
 
     - name: build react client
-      working-directory: ${{ REACT_PATH }}
+      working-directory: $REACT_PATH
       run: npm run build
