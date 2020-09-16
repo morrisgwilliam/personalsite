@@ -23,6 +23,7 @@ jobs:
     
     - name: print dir
       run: echo "$(ls)"
+      working-directory: .
 
     - name: install react dependencies
       working-directory: $PATH_REACT
