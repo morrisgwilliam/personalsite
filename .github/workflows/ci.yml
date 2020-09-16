@@ -4,7 +4,7 @@ on:
   push
 
 env:
-  PATH_REACT:  ./personal-site
+  PATH_REACT:  personal-site
 
 jobs:
   build:
