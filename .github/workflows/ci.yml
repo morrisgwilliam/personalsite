@@ -4,13 +4,13 @@ on:
   push
 
 env:
-  PATH_REACT:  ./personal-site
+  REACT_PATH:  ./personal-site
 
 jobs:
   build:
     defaults:
       run:
-        working-directory: $PATH_REACT
+        working-directory: $REACT_PATH
 
     runs-on: ubuntu-latest
     steps:
@@ -24,13 +24,13 @@ jobs:
     - name: print dir
       run: |
         echo "current directory: $(ls)"
-        echo "path variable $PATH_REACT"
+        echo "path variable $REACT_PATH"
       working-directory: ./personal-site
 
     - name: install react dependencies
-      working-directory: $PATH_REACT
+      working-directory: $REACT_PATH
       run: npm install
 
     - name: build react client
-      working-directory: $PATH_REACT
+      working-directory: $REACT_PATH
       run: npm run build
