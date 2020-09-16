@@ -22,6 +22,7 @@ jobs:
         node-version: 10.x
 
     - name: install react dependencies
+      working-directory: $PATH_REACT
       run: npm install
 
     - name: build react client
