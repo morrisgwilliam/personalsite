@@ -24,7 +24,7 @@ jobs:
     - name: print dir
       run: |
         echo "current directory: $(ls)"
-        echo "path variable $(PATH_REACT)"
+        echo "path variable $PATH_REACT"
       working-directory: ./personal-site
 
     - name: install react dependencies
