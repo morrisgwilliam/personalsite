@@ -14,7 +14,7 @@ const BioSection = props => (
           <div className="col-9 p-3 mt-3 mx-auto bio">
             <h4 className="text-center playfair">
               {" "}
-              Hello, my name is William.
+              Hello, my name is William Morris.
             </h4>
             <p className="text-center">
               {" "}
