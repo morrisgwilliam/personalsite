@@ -3,5 +3,5 @@
 ### Continuous Integration Status
 
 #### React Front End
+![example workflow file path](https://github.com/morrisgwilliam/personalsite/workflows/.github/workflows/ci.yml/badge.svg)
 
-https://github.com/morrisgwilliam/personalsite/workflows/ci/badge.svg
