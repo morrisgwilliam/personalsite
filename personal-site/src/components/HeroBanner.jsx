@@ -27,7 +27,7 @@ class HeroBanner extends React.PureComponent {
             transitions={transitions}
           >
             <div className="col-12" align="center">
-              <h1 className="emphasize pt-3">.Net Full Stack Web Developer</h1>
+              <h1 className="emphasize pt-3">Full Stack Web Developer</h1>
               <h5 className="pb-3">Creating innovative web appications.</h5>
               <div className="profile-pic" />
             </div>

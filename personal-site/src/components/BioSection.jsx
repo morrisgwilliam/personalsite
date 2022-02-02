@@ -5,6 +5,8 @@ import AddiHacks from "../Images/AddiHacks.png";
 import MSSQL from "../Images/MSSQL.png";
 import CSharp from "../Images/C#.png";
 import ASP from "../Images/ASP.png";
+import CertSA from "../Images/cert-aws-sa.png";
+import CertDev from "../Images/cert-aws-dev.png";
 
 const BioSection = props => (
   <div className="container-fluid px-0">
@@ -40,7 +42,7 @@ const BioSection = props => (
                 Chan Lab
               </a>
               . In 2018, I furthered my education by learning web development
-              and have since worked as a freelance full stack web developer.
+              and have since worked as a full stack web developer.
             </p>
           </div>
         </div>
@@ -55,9 +57,33 @@ const BioSection = props => (
               both backend and frontend structure to create dynamic content!
             </p>
             <br />
-            <p className="purple-text-wm">Technology and Langauges:</p>
+            <div className="row text-center">
+              <div className="col-3"></div>
+              <div className="col-3">
+              <a href="https://aws.amazon.com/certification/certified-developer-associate/" rel="noopener noreferrer" target="_blank">
+              <img
+              style={{maxWidth: `300px`}}
+              className="img-fluid zoom"
+              src={CertSA}
+              alt="AWS Solutions Architect Associate Certification"
+              />
+              </a>
+              </div>
+              <div className="col-3">
+              <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" rel="noopener noreferrer" target="_blank">
+              <img
+              style={{maxWidth: `300px`}}
+                className="img-fluid zoom"
+                src={CertDev}
+                alt="AWS Developer Associate Certification"
+              />
+              </a>
+              </div>
+              <div className="col-3"></div>
+            </div>
+            <p className="purple-text-wm mt-5">Technology and Langauges:</p>
             <p>
-              ReactJS, ASP.NET Web Api, SQL, Azure DevOps, TFS, CSS, jQuery and
+              ReactJS, dotnet Web Api, SQL, AWS, CSS, and
               more.
             </p>
             <br />
@@ -120,8 +146,8 @@ const BioSection = props => (
             <p>You can reach me at (909) 548-1515.</p>
             <p>
               Or send me an email at{" "}
-              <a href="mailto:morrisgwilliam@gmail.com?subject=Let's Talk">
-                morrisgwilliam@gmail.com
+              <a href="mailto:contact@morrisgwilliam.com?subject=Let's Talk">
+                contact@morrisgwilliam.com
               </a>
             </p>
             <br />
