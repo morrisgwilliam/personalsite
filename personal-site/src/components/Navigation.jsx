@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../Images/logo_100.jpg";
-import resumeW from "../Files/William_Morris.docx";
 import resumePDF from "../Files/William_Morris.pdf";
 
 const Navigation = props => (
@@ -37,16 +36,6 @@ const Navigation = props => (
             style={{ padding: "0px 16px" }}
           >
             <i className="fab fa-linkedin-in fa-3x" />
-          </a>
-        </span>
-        <span className="nav-btn px-1">
-          <a
-            className="btn-large waves-effect"
-            download
-            href={resumeW}
-            style={{ padding: "0px 16px" }}
-          >
-            <i className="fas fa-file-word fa-3x " /> Resume
           </a>
         </span>
         <span className="nav-btn px-1">
