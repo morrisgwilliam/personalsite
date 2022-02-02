@@ -35,4 +35,4 @@ jobs:
       
       - name: Replace S3 Bucket Files
         run: |
-          aws s3 sync build s3://morrisgwilliam-site --delete --cache-control 'no-cache' --acl public-read
+          nom run deploy
