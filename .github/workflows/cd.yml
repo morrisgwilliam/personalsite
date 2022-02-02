@@ -35,4 +35,4 @@ jobs:
       
       - name: Replace S3 Bucket Files
         run: |
-          nom run deploy
+          npm run deploy
